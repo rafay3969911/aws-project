@@ -1,7 +1,7 @@
-variable "subnet_id" {
-  description = "dd"
+variable "public_subnet_ids" {
+  description = "this is subnet id"
 }
 
-variable "subnet_id2" {
-  description = "fddf"
+variable "private_subnet_ids" {
+  description = "."
 }

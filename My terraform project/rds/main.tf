@@ -2,7 +2,7 @@
 
 resource "aws_db_subnet_group" "rafay-subnet-group" {
   name       = "examplmudze-subnet-group"
-  subnet_ids =  [var.subnet_id,var.subnet_id2]
+  subnet_ids =  [var.public_subnet_ids[0]]
 
   tags = {
     Name = "rafay-subnet-group"

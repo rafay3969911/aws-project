@@ -6,13 +6,15 @@ variable "aws_ami_from_instance" {
 #   description = "this is instance"
 # }
 
-variable "subnet_id" {
-  description = "this is id "
+variable "public_subnet_ids" {
+  description = "."
 }
 
-variable "subnet_id2" {
-  description = "this is Id "
+variable "private_subnet_ids" {
+  description = "."
 }
+
+
 variable "target_group_arn" {
   description = "this is dd"
 }

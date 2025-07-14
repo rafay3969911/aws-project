@@ -1,11 +1,12 @@
 variable "vpc_id" {
   description = "this is vpc id"
 }
- variable "subnet_id" {
-   description = "id"
+
+ variable "public_subnet_ids" {
+   description = "."
  }
 
- variable "pub_sub2" {
-   description = "dd"
- }
-
+variable "private_subnet_ids" {
+  description = "."
+  
+}

@@ -4,7 +4,7 @@ resource "aws_lb" "rafay-lb" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.rafay-ld-sg.id]
-  subnets            = [var.subnet_id, var.pub_sub2]
+  subnets            = [var.public_subnet_ids[0],var.public_subnet_ids[1]]
 
   enable_deletion_protection = false
 

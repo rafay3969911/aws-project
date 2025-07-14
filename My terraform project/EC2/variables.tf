@@ -2,14 +2,14 @@ variable "instance_type" {
   default = "t2.micro"
 }
 variable "ami" {
-  default = "ami-0b1f2b17be9b81cdc"
+  default = "ami-0ed9f8d63c9e8b95a"
 }
 
 variable "vpc_id" {
   description = "this is ID "
 }
 
-variable "subnet_id" {
+variable "public_subnet_ids" {
   description = "this is subnet id"
 }
 

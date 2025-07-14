@@ -6,7 +6,7 @@ resource "aws_launch_template" "rafay_lt" {
 }
 
 resource "aws_autoscaling_group" "rafay_asg" {
-  vpc_zone_identifier = [var.subnet_id,var.subnet_id2 ]
+  vpc_zone_identifier = [var.public_subnet_ids[0],var.public_subnet_ids[1]]
   target_group_arns = [ var.target_group_arn ]
   desired_capacity   = 2
   max_size           = 2
